@@ -58,7 +58,8 @@ public final class MultiPartFileUtils {
             if (content.trim().startsWith("filename")) {
                 return content.substring(content.indexOf('=') + 1).trim().replace("\"", "");
             }
-        }
         return null;
     }
 }
+
+
